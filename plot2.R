@@ -15,7 +15,7 @@ epc$timestamp <- strptime(epc$timestamp, format="%Y-%m-%d %H:%M:%S")
 Sys.setlocale("LC_TIME", "English")
 
 ## open PNG graphics device
-png(file="./plot2.png")
+png(file="./plot2.png", width=640, height=640)
 
 ## plot diagram 
 plot(epc$timestamp, epc$Global_active_power, type="n", xlab="", ylab="Global Active Power (kilowatts)")

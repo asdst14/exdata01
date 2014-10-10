@@ -15,7 +15,7 @@ epc$timestamp <- strptime(epc$timestamp, format="%Y-%m-%d %H:%M:%S")
 Sys.setlocale("LC_TIME", "English")
 
 ## open PNG graphics device
-png(file="./plot4.png")
+png(file="./plot4.png", width=640, height=640)
 
 ## set matrix panel
 par(mfrow=c(2,2))

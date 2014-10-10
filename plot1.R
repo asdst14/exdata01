@@ -15,7 +15,7 @@ epc$timesamp <- strptime(epc$timesamp, format="%Y-%m-%d %H:%M:%S")
 Sys.setlocale("LC_TIME", "English")
 
 ## open PNG graphics device
-png(file="./plot1.png")
+png(file="./plot1.png", width=640, height=640)
 
 ## create histogram
 hist(epc$Global_active_power, col="red", xlab="Global Active Power (kilowatts)", main="Global Active Power")

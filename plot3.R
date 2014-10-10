@@ -15,7 +15,7 @@ epc$timestamp <- strptime(epc$timestamp, format="%Y-%m-%d %H:%M:%S")
 Sys.setlocale("LC_TIME", "English")
 
 ## open PNG graphics device
-png(file="./plot3.png")
+png(file="./plot3.png", width=640, height=640)
 
 ## plot diagram 
 plot(epc$timestamp, epc$Sub_metering_1, type="n", xlab="", ylab="Energy sub metering")
